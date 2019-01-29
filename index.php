@@ -8,7 +8,15 @@
 <body>
 
 
-	
+		<?php require 'stemauth/steamauth.php'l
+	loginButton();
+
+	if(isset($_SESSION['steamid'])){
+		require 'steamauth/userInfo.php';
+		echo $steamprofile['personaname'];
+		echo "<a href='stemauth/logout.php'>Выйти</a>"
+	}
+	?>
 
 
 		
